@@ -40,8 +40,6 @@ jobs:
           --string-array-threshold 1 \
           --transform-object-keys true \
           --unicode-escape-sequence true \
-          --debugger-detection true \
-          --disable-console-output true \
           --string-array-rotate true \
           --string-array-shuffle true \
           --string-array-wrappers-count 5 \
@@ -50,7 +48,7 @@ jobs:
           --split-strings true \
           --split-strings-chunk-length 5 \
 
-      - name: Commit changes
+      - name: 提交更改
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
